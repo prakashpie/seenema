@@ -1,6 +1,6 @@
-# movie-app
+# Seenema
 
-> Movie app v1
+> Movie search nuxt web app with help of OMDB API
 
 ## Build Setup
 
@@ -14,9 +14,4 @@ $ npm run dev
 # build for production and launch server
 $ npm run build
 $ npm start
-
-# generate static project
-$ npm run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
