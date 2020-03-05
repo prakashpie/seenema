@@ -1,0 +1,32 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo Installing dependecies...
+      - npm install
+  build:
+    commands:
+      - echo Building the nuxt code...
+      - npm run build
+  post_build:
+    commands:
+      - echo Removing the unused files for deploy...
+      - rm -R node_modules .git*  components layouts pages store
+      - npm install --production
+artifacts:
+  files:
+    - appspec.yml
+    - buildspec.yml
+    - nuxt.config.js
+    - package.json
+    - middleware/*
+    - scripts/*
+    - server/*
+    - assets/**/*
+    - dist/**/*
+    - node_modules/**/*
+    - plugins/**/*
+    - static/**/*

@@ -1,0 +1,34 @@
+.rx-section {
+  padding: 32px 0;
+}
+:root {
+  --color-primary: 238, 54, 60;
+  --color-accent: 253 216 53;
+}
+.movie-search {
+   width: 100%;
+ }
+.md-interactive--focused {
+  box-shadow: none;
+}
+.input-group-dropdown {
+  min-width: 100px;
+}
+.home-banner {
+  height: 60vh;
+  min-height: 420px;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--color-app-status-bar);
+  overflow: hidden;
+}
+.input-group {
+  display: flex;
+  max-width: 720px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
